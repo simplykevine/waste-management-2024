@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+  %}
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="jumbotron mt-4">
+          <h1 class="display-4 book-four">Welcome to Sustainable Waste</h1>
+          <p class="lead">Manage waste collection schedules, track recycling efforts, and view environmental impact metrics.</p>
+          <hr class="my-4">
+          <p>Sign up or log in to get started.</p>
+          <a class="btn btn-primary btn-lg" href="sign-up" role="button">Sign Up</a>
+          <a class="btn btn-secondary btn-lg" href="login" role="button">Login</a>
+          <img class="photo" src="{{ url_for('static', filename='images/BAG-removebg.png') }}" alt="Logo" width="200" height="200", margin="left">
+      </div>
+      <div class="container mt-4">
+        <h2>Waste management basics</h2>
+        <p>What is waste management and recycling?</p>
+        <p>Waste management and recycling are two crucial practices essential for maintaining a sustainable environment. Waste management refers to the process of collecting, transporting, processing, and disposing of waste materials. Waste management encompasses various activities to reduce, reuse, and recycle waste materials. It involves the proper handling of waste from the point of generation to its final disposal.</p>
+        <p>Recycling involves the conversion of waste into useful materials or products. This helps reduce the amount of waste ending up in landfills and reduces the need for new raw materials.</p>
+        <p>Together, waste management and recycling play a significant role in reducing the negative impact of human activities on the environment.</p>
+        <img class="photo2" src="{{ url_for('static', filename='images/BAG.png') }}" alt="Logo" width="200" height="200", margin="left">
+
+    </div>
+  </div>
+  
+  {% endblock %} 
+{% block background_video %}{% endblock %}
